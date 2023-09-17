@@ -1,7 +1,8 @@
 import {createContext} from "react";
 
 export enum Theme {
-    STANDARD = 'standard'
+    LIGHT = 'light',
+    DARK = 'dark',
 }
 
 export interface ThemeContextProps {
@@ -11,4 +12,4 @@ export interface ThemeContextProps {
 
 export const ThemeContext = createContext<ThemeContextProps>({})
 
-export const LOCAL_STORAGE_THEME_KEY = 'proj_id_theme'
+export const LOCAL_STORAGE_THEME_KEY = 'impudev_theme'

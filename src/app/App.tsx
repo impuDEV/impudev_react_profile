@@ -5,6 +5,7 @@ import { useTheme } from "./providers/ThemeProvider"
 import {NavBar} from "widgets/NavBar";
 import { AppRouter } from "./providers/router";
 import { Suspense } from "react";
+import { Header } from 'widgets/Header/ui/Header';
 
 const App = () => {
     const {theme} = useTheme()
@@ -12,6 +13,7 @@ const App = () => {
     return (
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
+                <Header/>
                 <NavBar/>
                 <div className="content-page">
                     <AppRouter/>

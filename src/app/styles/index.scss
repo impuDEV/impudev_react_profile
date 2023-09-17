@@ -1,6 +1,6 @@
 @import "reset";
-@import "./variables/global";
-@import "./themes/standard";
+@import "variables/global";
+@import "themes/standard";
 
 .app {
   font-size: var(--font-m);
